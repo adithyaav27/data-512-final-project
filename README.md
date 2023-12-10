@@ -31,8 +31,11 @@ A dependant library class is available in [/wildfire](https://github.com/adithya
   One can bbtain this JSON file from [USGS Wildfire data](https://www.sciencebase.gov/catalog/item/61aa537dd34eb622f699df81).
   Retrieve the 'GeoJSON Files.zip' file.
   Extract the contents of this archive into a directory of your choice. You are expected to change the directory from which this particular data is read to run the codes.
+
 - Air Quality Index: This dataset, accessed via an API from the EPA's Air Quality System database, contains historical and present Air Quality Index (AQI) measurements across the U.S. The AQI, ranging from 0 to 500, covers ground-level ozone, particle pollution, carbon monoxide, sulfur dioxide, and nitrogen dioxide levels. Focusing on AQI readings from San Juan County during fire seasons, this dataset is pivotal for correlating smoke estimates with actual air quality and potential health impacts. Usage guidelines and terms are available on the dataset's website listed above.
-- Fertility Data: Fertility data from the [U.S. Census Bureau's website](https://data.census.gov/table/ACSST1Y2022.S1301), specifically the American Community Survey (ACS), offers valuable insights into the potential health impacts of smoke exposure on maternal health and birth outcomes. Covering Farmington, NM from 2010 to 2021, this dataset provides detailed demographic information, including fertility rates. This data was downloaded manually. You can go to the website, filter for the City and select the year. Hit the download option to download the file. Each year has its own Excel file which we can extract. Data is available in this repository under /FOLDER. Key columns: Label (Name of the parameter), Estimate (Fertility Rate %).
+
+-  Fertility Data: Fertility data from the [U.S. Census Bureau's website](https://data.census.gov/table/ACSST1Y2022.S1301), specifically the American Community Survey (ACS), offers valuable insights into the potential health impacts of smoke exposure on maternal health and birth outcomes. Covering Farmington, NM from 2010 to 2021, this dataset provides detailed demographic information, including fertility rates. This data was downloaded manually. You can go to the website, filter for the City and select the year. Hit the download option to download the file. Each year has its own Excel file which we can extract. Data is available in this repository under /FOLDER. Key columns: Label (Name of the parameter), Estimate (Fertility Rate %).
+  
 - Mortality & Medicare Enrollees Data: This comprehensive dataset from the [Dartmouth Atlas Data Website](https://data.dartmouthatlas.org/mortality/#by-year) includes both Mortality Data and Medicare Enrollees Data, crucial for assessing healthcare impacts in Farmington related to smoke exposure. The Mortality Data, spanning from 1999 to 2019, provides detailed insights into death rates in Farmington, enabling an understanding of the health challenges and severity of smoke events. Meanwhile, the Medicare Enrollees Data for the same period offers a clear picture of the elderly population in Farmington. This is vital for evaluating the healthcare system’s capacity, especially during smoke events when elderly individuals are more susceptible to health effects. Every year has an excel file for all cities. We filter using a python program. Data is available in this repository under /FOLDER. Key columns: HSA Name (City name), Medicare Enrollees, Total Moratality Rate (%).
 
 ## Intermediate outputs
@@ -72,6 +75,14 @@ All of these files can be found under /intermediate folder. These are placed the
 - year: Holds the specific twelve-month period in which AQI readings were gathered.
 - yearly_avg_aqi: The mean AQI level calculated from all detectors in the county.
 
+8. [SmokeEstimate_Features.csv](https://github.com/adithyaav27/data-512-final-project/blob/main/intermediate/SmokeEstimate_Features.csv): Result of code 2_ImpactAnalysis which is designed to assess the health effects of smoke estimates in Farmington, NM. This file includes the year wise values of SmokeEstimate, Average AQI, Medicare Enrollees data, Mortality Rate, Fertility Rate. It totally has 6 columns:
+- year: Holds the specific Year value of the metric.
+- SmokeEstimate: Smoke Estimates from [annual_smoke_estimate.csv](https://github.com/adithyaav27/data-512-common-analysis/blob/main/intermediate/annual_smoke_estimate.csv).
+- yearly_avg_aqi: Air Quality Index from [yearly_aqi.csv](https://github.com/adithyaav27/data-512-common-analysis/blob/main/intermediate/yearly_aqi.csv).
+- MedicareEnrollees: Total Number of people enrolled with Medicare.
+- MortalityRate: Number of Deaths/Mortality Rate as a Percentage.
+- FertilityRate: Number of births/Fertility Rate as a Percentage.
+
 # Known Data Issues and Special Considerations
 - The dataset from the United States Geological Survey (USGS) contains approximately 130,000 records of wildfires, with about 94,774 of these incidents taking place since 1963 and occurring within a 1,250-mile radius of Farmington, New Mexico.
 - The USGS Wildland Fire Combined Dataset includes approximations of fire perimeters, with data pre-1980 likely underreporting fire occurrences.
@@ -84,6 +95,8 @@ All of these files can be found under /intermediate folder. These are placed the
 - The fire distance calculation tool is limited to "ring" shaped fires; 36 "curve ring" shaped fires are incompatible and thus omitted.
 - Air Quality Index (AQI) records from earlier periods can be intermittent. It has been observed that consistent and dependable AQI measurements from stations in Farmington, NM, commenced from 2005 onwards.
 - AQI data is also restricted to the fire season for comparison with smoke estimates.
+- The Fertility Rate data from the US Census might not of sampling errors. Especially during the 2020 COVID Pandemic.
+- The Medicare Enrollees & Mortality data might have some sampling errors with a potential of bias. 
 
 ## Outputs
 - [Q1.png](https://github.com/adithyaav27/data-512-common-analysis/blob/main/Images/Q1.png) : This graph depicts the cumulative acreage affected by wildfires each year within a 1,250-mile radius of Farmington, NM, over the period from 1963 to 2020.
