@@ -102,19 +102,20 @@ All of these files can be found under /intermediate folder. These are placed the
 - The Medicare Enrollees & Mortality data might have some sampling errors with a potential of bias. 
 
 ## Outputs
-- [Q1.png](https://github.com/adithyaav27/data-512-common-analysis/blob/main/Images/Q1.png) : This graph depicts the cumulative acreage affected by wildfires each year within a 1,250-mile radius of Farmington, NM, over the period from 1963 to 2020.
-- [Q2.png](https://github.com/adithyaav27/data-512-common-analysis/blob/main/Images/Q2.png) : This is a graphical representation that illustrates the spatial distribution of wildfires in relation to Farmington, NM, spanning the years 1963 to 2020.
-- [Q3.png](https://github.com/adithyaav27/data-512-common-analysis/blob/main/Images/Q3.png) : This is a graph illustrating the comparison between the estimated yearly smoke levels and the annual Air Quality Index (AQI) during fire seasons, spanning from 2005 to 2020.
+- [Number of Fires.png](https://github.com/adithyaav27/data-512-common-analysis/blob/main/Images/Q1.png) : This graph depicts the cumulative acreage affected by wildfires each year within a 1,250-mile radius of Farmington, NM, over the period from 1963 to 2020.
+- [Total Acres Burned.png](https://github.com/adithyaav27/data-512-common-analysis/blob/main/Images/Q2.png) : This is a graphical representation that illustrates the spatial distribution of wildfires in relation to Farmington, NM, spanning the years 1963 to 2020.
+- [SmokeEstimate vs AQI.png](https://github.com/adithyaav27/data-512-common-analysis/blob/main/Images/Q3.png) : This is a graph illustrating the comparison between the estimated yearly smoke levels and the annual Air Quality Index (AQI) during fire seasons, spanning from 2005 to 2020.
+- [SmokeEstimatePrediction.png](https://github.com/adithyaav27/data-512-common-analysis/blob/main/Images/SmokeEstimateModel.png) : This is a graph depicts the model prediction of the smoke levels from 2021 to 2045.
 - [Step 3 Report.pdf](https://github.com/adithyaav27/data-512-common-analysis/blob/main/Step%203%20Report.pdf) This is a document containing in-depth analysis of the initial trio of diagrams presented, accompanied by a commentary reflecting on the findings.
 - [CorrelationAnalysis.png](https://github.com/adithyaav27/data-512-final-project/blob/main/Images/Correlation.png); The picture that shows the correlation matrix of Smoke Estimates with AQI & the health parameters.
-- [Lag Analysis](https://github.com/adithyaav27/data-512-final-project/blob/main/Images/LagAnalysis.png): Table of correlation values of lagged values.
+- [Lag Analysis](https://github.com/adithyaav27/data-512-final-project/blob/main/Images/LagAnalysis.png): Table of correlation values of time lagged feature values.
 - [Regression Analysis - Mortality Rate](https://github.com/adithyaav27/data-512-final-project/blob/main/Images/RegressionAnalysisSmokeVsMortality.png): The graph that shows the current trends and potentially projects the impact of smoke estimates on Mortality Rate in the future
 - [Regression Analysis - Fertility Rate](https://github.com/adithyaav27/data-512-final-project/blob/main/Images/RegressionAnalysisSmokeVsFertility.png): The graph that shows the current trends and potentially projects the impact of smoke estimates on Fertility Rate in the future
 
 ## Conclusion
 - The data shows that from 1963 to 2020, a considerable amount of forest fires occurred within a 1250-mile radius of Farmington, New Mexico. During this period, there was a variable yet overall upward trend in the amount of land affected by these fires. This led to the forecast of smoke patterns for the upcoming 25 years, which will assist in shaping the city's strategies to reduce the impact of future wildfires.
 - The Smoke Forecast for 2021 to 2045 predicts extensive smoke penetration and its far-reaching effects in the coming years. This highlights the importance of investigating the specific health consequences of smoke exposure.
-- 
+  
 In summary, from the three impact analyses conducted:
 - Health Parameter Affected - Correlation Analysis: We found a strong positive correlation between smoke estimates and mortality rates, suggesting that higher smoke exposure might lead to increased mortality rates. Conversely, a significant negative correlation between smoke estimates and fertility rates indicates that increased smoke exposure could be linked to lower fertility rates.
 - Immediate vs Time-Lagged Effects - Lag Analysis: The strongest impact of smoke on health indicators is observed immediately (lag 0), indicating that the effects of smoke exposure are more pronounced in the short term.
