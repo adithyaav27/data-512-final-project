@@ -103,6 +103,10 @@ All of these files can be found under /intermediate folder. These are placed the
 - [Q2.png](https://github.com/adithyaav27/data-512-common-analysis/blob/main/Images/Q2.png) : This is a graphical representation that illustrates the spatial distribution of wildfires in relation to Farmington, NM, spanning the years 1963 to 2020.
 - [Q3.png](https://github.com/adithyaav27/data-512-common-analysis/blob/main/Images/Q3.png) : This is a graph illustrating the comparison between the estimated yearly smoke levels and the annual Air Quality Index (AQI) during fire seasons, spanning from 2005 to 2020.
 - [Step 3 Report.pdf](https://github.com/adithyaav27/data-512-common-analysis/blob/main/Step%203%20Report.pdf) This is a document containing in-depth analysis of the initial trio of diagrams presented, accompanied by a commentary reflecting on the findings.
+- [CorrelationAnalysis.png](); The picture that shows the correlation matrix of Smoke Estimates with AQI & the health parameters.
+- [Lag Analysis](): Table of correlation values of lagged values.
+- [Regression Analysis - Mortality Rate](): The graph that shows the current trends and potentially projects the impact of smoke estimates on Mortality Rate in the future
+- [Regression Analysis - Fertility Rate](): The graph that shows the current trends and potentially projects the impact of smoke estimates on Fertility Rate in the future
 
 ## Conclusion
 In summary, from the three analyses conducted:
