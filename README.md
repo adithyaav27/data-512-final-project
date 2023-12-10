@@ -83,7 +83,7 @@ All of these files can be found under /intermediate folder. These are placed the
 - MortalityRate: Number of Deaths/Mortality Rate as a Percentage.
 - FertilityRate: Number of births/Fertility Rate as a Percentage.
 
-# Known Data Issues and Special Considerations
+## Known Data Issues and Special Considerations
 - The dataset from the United States Geological Survey (USGS) contains approximately 130,000 records of wildfires, with about 94,774 of these incidents taking place since 1963 and occurring within a 1,250-mile radius of Farmington, New Mexico.
 - The USGS Wildland Fire Combined Dataset includes approximations of fire perimeters, with data pre-1980 likely underreporting fire occurrences.
 - Fire boundaries are considered estimates, with the potential for numerous recording errors or omissions.
@@ -103,3 +103,11 @@ All of these files can be found under /intermediate folder. These are placed the
 - [Q2.png](https://github.com/adithyaav27/data-512-common-analysis/blob/main/Images/Q2.png) : This is a graphical representation that illustrates the spatial distribution of wildfires in relation to Farmington, NM, spanning the years 1963 to 2020.
 - [Q3.png](https://github.com/adithyaav27/data-512-common-analysis/blob/main/Images/Q3.png) : This is a graph illustrating the comparison between the estimated yearly smoke levels and the annual Air Quality Index (AQI) during fire seasons, spanning from 2005 to 2020.
 - [Step 3 Report.pdf](https://github.com/adithyaav27/data-512-common-analysis/blob/main/Step%203%20Report.pdf) This is a document containing in-depth analysis of the initial trio of diagrams presented, accompanied by a commentary reflecting on the findings.
+
+## Conclusion
+In summary, from the three analyses conducted:
+- Correlation Analysis: We found a strong positive correlation between smoke estimates and mortality rates, suggesting that higher smoke exposure might lead to increased mortality rates. Conversely, a significant negative correlation between smoke estimates and fertility rates indicates that increased smoke exposure could be linked to lower fertility rates.
+- Lag Analysis: The strongest impact of smoke on health indicators is observed immediately (lag 0), indicating that the effects of smoke exposure are more pronounced in the short term.
+- Regression Analysis: The regression models show a strong and statistically significant relationship between higher smoke estimates and increased mortality rates. In contrast, a moderately negative, yet significant, relationship is observed between smoke estimates and fertility rates, suggesting that increased smoke exposure may negatively impact fertility. This gives us an idea about the future trends of the impact.
+- 
+Overall, these analyses collectively suggest that smoke exposure has a significant, immediate, and potentially lasting impact on key health outcomes, highlighting the importance of addressing smoke exposure in public health initiatives.
