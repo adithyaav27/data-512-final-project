@@ -15,7 +15,7 @@ The software code utilized for this initiative is distributed under the terms of
 - AQS API: [Air Quality System (AQS) API](https://aqs.epa.gov/aqsweb/documents/data_api.html)
 - AQS API Key: Code 1.3_AQI_Data has instructions to create an account and make API calls. Please refer to that. Make sure to use your own USERNAME & APIKEY
 - Mortality & Medicare Enrollees Data: [Dartmouth Atlas Data Terms of Use](https://data.dartmouthatlas.org/terms-of-use/) 
-- Fertility Data: [U.S. Census Bureau's website](https://data.census.gov/table/ACSST1Y2022.S1301)
+- Fertility Data: [U.S. Census Bureau's License Information and Disclaimer]([https://data.census.gov/table/ACSST1Y2022.S1301](https://www.census.gov/data/software/x13as/disclaimer.html))
 
 ## Code
 There are in total of 6 notebooks that are expected to run one after the other.
@@ -111,7 +111,7 @@ All of these files can be found under /intermediate folder. These are placed the
 - [Regression Analysis - Mortality Rate.png](https://github.com/adithyaav27/data-512-final-project/blob/main/Images/RegressionAnalysisSmokeVsMortality.png): The graph that shows the current trends and potentially projects the impact of smoke estimates on Mortality Rate in the future
 - [Regression Analysis - Fertility Rate.png](https://github.com/adithyaav27/data-512-final-project/blob/main/Images/RegressionAnalysisSmokeVsFertility.png): The graph that shows the current trends and potentially projects the impact of smoke estimates on Fertility Rate in the future
 - [Step 3 Report.pdf](https://github.com/adithyaav27/data-512-final-project/blob/main/Step%203%20Report.pdf) This is a document containing in-depth analysis of the initial trio of diagrams presented, accompanied by a commentary reflecting on the findings.
-- [DATA512_Final_Report.pdf](https://github.com/adithyaav27/data-512-final-project/blob/main/DATA512_Final_Report.pdf) This is a document containing in-depth analysis of the initial trio of diagrams presented, accompanied by a commentary reflecting on the findings.
+- [DATA512_Final_Report.pdf](https://github.com/adithyaav27/data-512-final-project/blob/main/DATA512_Final_Report.pdf) This is a document that serves as the final report for the impact analysis submitted via Canvas.
 
 
 
