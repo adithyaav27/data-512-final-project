@@ -23,9 +23,9 @@ If you are reading the .json file, make sure to point the directory where the da
 - [1.1_Data_Acquisition.ipynb](https://github.com/adithyaav27/data-512-final-project/blob/main/1.1_Data_Acquisition.ipynb) : Gets fire information for 1963-2020 within 1250 mile of Farmington, NM.
 - [1.2_SmokeEstimateCalculation.ipynb](https://github.com/adithyaav27/data-512-final-project/blob/main/1.2_SmokeEstimateCalculation.ipynb) : Ideates and creates the Smoke Estimate for 1963-2020.
 - [1.3_AQI_Data.ipynb](https://github.com/adithyaav27/data-512-final-project/blob/main/1.3_AQI_Data.ipynb) : Call the AQS API to get the Air Quality Index for Farmington and compares it with the Smoke Estimate.
-- [1.4_Modelling.ipynb](https://github.com/adithyaav27/data-512-final-project/blob/main/1.4_Modelling.ipynb) : Creates a predictive model of the Smoke Estimate and forcasts the estimates for the next 25 years.
+- [1.4_Modelling.ipynb](https://github.com/adithyaav27/data-512-final-project/blob/main/1.4_Modelling.ipynb) : Creates a predictive model of the Smoke Estimate and forcasts the estimates for the next 25 years using [Arima](https://www.statsmodels.org/stable/generated/statsmodels.tsa.arima.model.ARIMA.html).
 - [1.5_Report_Visualizations.ipynb](https://github.com/adithyaav27/data-512-final-project/blob/main/1.5_Report_Visualizations.ipynb) : Answers the Questions asked in Step 2 of common analysis Assignment on Canvas.
-- [2_ImpactAnalysis](https://github.com/adithyaav27/data-512-final-project/blob/main/2_ImpactAnalysis.ipynb): Reads health realted variables, compares it with Smoke Estimate to understand the impact of smoke on the health of the people.
+- [2_ImpactAnalysis](https://github.com/adithyaav27/data-512-final-project/blob/main/2_ImpactAnalysis.ipynb): Reads health realted variables, compares it with Smoke Estimate to understand the impact of smoke on the health of the people. It uses [Ordinary Least Sqaure regression](https://www.statsmodels.org/stable/regression.html) technique as a part of the analysis.
   
 A dependant library class is available in [/wildfire](https://github.com/adithyaav27/data-512-final-project/tree/main/wildfire). This is imported within the notebooks.
 
